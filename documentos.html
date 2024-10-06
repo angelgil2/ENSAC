@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentos de Afiliación - ENSAC E.P.S</title>
+  <link rel="stylesheet" href="template.css">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <div class="navbar">
+    <a href="index.html">
+      <img src="logo_ensac.png" alt="Logo ENSAC E.P.S">
+    </a>
+    <button class="navbar-toggle" onclick="toggleNavbar()">Menú</button>
+    <div class="navbar-links">
+        <a href="index.html">Inicio</a>
+        <a href="#services">Servicios</a>
+        <a href="index.html#affiliation">Afiliación</a>
+        <a href="#contact">Contacto</a>
+        <a href="documentos.html">Documentos de Afiliación</a>
+        <a href="movilidad.html">Movilidad y Portabilidad</a>
+    </div>
+  </div>
+
+  <!-- Contenido de Documentos de Afiliación -->
+  <div class="document-section">
+    <h1>Documentos de Afiliación</h1>
+
+    <h2>Régimen Contributivo:</h2>
+    <p>El régimen contributivo está destinado a las personas que tienen capacidad de pago, es decir, trabajadores dependientes, independientes o pensionados.</p>
+    
+    <h3>Documentos requeridos para la afiliación:</h3>
+    <ul>
+      <li><strong>Trabajadores dependientes (empleados):</strong>
+        <ul>
+          <li>Fotocopia del documento de identidad.</li>
+          <li>Formulario de afiliación a la EPS diligenciado.</li>
+          <li>Certificado laboral o carta de vinculación laboral.</li>
+          <li>Si hay beneficiarios (cónyuge, hijos), fotocopia de los documentos de identidad de cada uno y registro civil de nacimiento o matrimonio.</li>
+        </ul>
+      </li>
+      <li><strong>Trabajadores independientes:</strong>
+        <ul>
+          <li>Fotocopia del documento de identidad.</li>
+          <li>Formulario de afiliación a la EPS.</li>
+          <li>Certificación de ingresos o declaración de renta (si aplica) o certificación como trabajador independiente.</li>
+          <li>Comprobante de pago de la primera cotización a la seguridad social.</li>
+          <li>Si tiene beneficiarios, fotocopias de los documentos de identidad y registros civiles correspondientes.</li>
+        </ul>
+      </li>
+      <li><strong>Pensionados:</strong>
+        <ul>
+          <li>Fotocopia del documento de identidad.</li>
+          <li>Formulario de afiliación a la EPS.</li>
+          <li>Resolución de pensión o certificación del fondo de pensiones.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Régimen Subsidiado:</h2>
+    <p>Este régimen está destinado a las personas que no tienen capacidad de pago y están clasificadas en los niveles 1 o 2 del SISBÉN.</p>
+    
+    <h3>Documentos requeridos para la afiliación:</h3>
+    <ul>
+      <li><strong>Ciudadanos sin capacidad de pago:</strong>
+        <ul>
+          <li>Fotocopia del documento de identidad.</li>
+          <li>Certificación del SISBÉN que demuestre que pertenece a los niveles 1 o 2.</li>
+          <li>Formulario de afiliación a la EPS Subsidiada.</li>
+          <li>Si hay beneficiarios, fotocopias de los documentos de identidad y registro civil (hijos o cónyuge).</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Reglas de afiliación comunes a los regímenes contributivo y subsidiado</h2>
+    <p><strong>Decreto 2353-2015</strong></p>
+    <p>En la afiliación al Sistema General de Seguridad Social en salud, la persona acepta las condiciones propias del régimen contributivo o subsidiado y aquellas relacionadas con las cuotas moderadoras y copagos para la prestación de los servicios. Sin afiliaciones retroactivas.</p>
+    <p>La escogencia de la EPS es libre, y la desafiliación al sistema solo se producirá cuando la persona fallezca. Los trabajadores independientes podrán efectuar el pago proporcional a los días objeto de cotización.</p>
+    <p>Mientras inicie el funcionamiento del Sistema de Afiliación Transaccional y el Ministerio establezca la fecha para empezar la afiliación a través del formulario electrónico, las afiliaciones, las novedades de traslado o movilidad se realizarán mediante el formulario físico.</p>
+    <p>El Decreto 2353 de 2015 dicta que el Ministerio de Salud y Protección Social deberá definir un componente de información complementaria que se incluirá en el Sistema de Afiliación Transaccional para identificar y gestionar los riesgos de los afiliados, con base en la cual determinará las estrategias o lineamientos para la administración del riesgo en salud por parte de la EPS.</p>
+    <p>Mientras tanto, la información del estado de salud solo podrá diligenciarse con posterioridad a la afiliación o el traslado y será utilizada por las E.P.S. para identificar y gestionar los riesgos de su población afiliada.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>ENSAC E.P.S © 2024 | Todos los derechos reservados | Contacto: <a href="mailto:info@ensaceps.com.co" style="color: white;">info@ensaceps.com.co</a></p>
+    <p>Teléfono: 018000925565 | Dirección: Calle 123 #45-67, Bogotá, Colombia</p>
+  </footer>
+
+  <script>
+    function toggleNavbar() {
+      const links = document.querySelector('.navbar-links');
+      links.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

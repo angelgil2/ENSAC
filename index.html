@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENSAC E.P.S - Inicio</title>
+  <link rel="stylesheet" href="template.css"> <!-- Importar CSS template -->
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <div class="navbar">
+    <a href="#home">
+      <img src="logo_ensac.png" alt="Logo ENSAC E.P.S">
+    </a>
+    <button class="navbar-toggle" onclick="toggleNavbar()">Menú</button>
+    <div class="navbar-links">
+        <a href="index.html">Inicio</a>
+        <a href="#services">Servicios</a>
+        <a href="index.html#affiliation">Afiliación</a>
+        <a href="#contact">Contacto</a>
+        <a href="documentos.html">Documentos de Afiliación</a>
+        <a href="movilidad.html">Movilidad y Portabilidad</a>
+    </div>
+  </div>
+
+  <!-- Carrusel de imágenes -->
+  <div class="carousel">
+    <img src="im.jpg" alt="Imagen 1">
+    <button class="carousel-button">Más Información</button>
+  </div>
+
+  <!-- Sección de afiliación -->
+  <div class="affiliation-section" id="affiliation">
+    <h2>Afíliate a ENSAC E.P.S</h2>
+    <button class="affiliation-button">Afiliarme</button>
+  </div>
+
+  <!-- Sección de Misión y Visión -->
+  <div class="mission-vision-container">
+    <div class="mission">
+      <h2>Misión</h2>
+      <p>Brindar servicios de salud integrales y de calidad a nuestros afiliados, asegurando su bienestar y mejorando su calidad de vida.</p>
+    </div>
+    <div class="vision">
+      <h2>Visión</h2>
+      <p>Ser la EPS líder en el país, reconocida por la satisfacción de nuestros afiliados y la excelencia en la prestación de servicios de salud.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>ENSAC E.P.S © 2024 | Todos los derechos reservados | Contacto: <a href="mailto:info@ensaceps.com.co" style="color: white;">info@ensaceps.com.co</a></p>
+    <p>Teléfono: 018000925565 | Dirección: Calle 123 #45-67, Bogotá, Colombia</p>
+  </footer>
+
+  <script>
+    function toggleNavbar() {
+      const links = document.querySelector('.navbar-links');
+      links.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

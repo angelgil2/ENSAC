@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movilidad y Portabilidad - ENSAC E.P.S</title>
+  <link rel="stylesheet" href="template.css">
+  <style>
+    .movilidad-portabilidad-container {
+      padding: 20px;
+      text-align: center; /* Centra el texto en la vista móvil */
+    }
+
+    .button {
+      background-color: #2E86C1;
+      color: white;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #1A5A85; /* Color de fondo al pasar el ratón */
+    }
+
+    .section {
+      display: none; /* Oculta las secciones inicialmente */
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      margin: 10px 0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (min-width: 768px) {
+      .movilidad-portabilidad-container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .section {
+        width: 48%; /* Ajusta el ancho de las columnas */
+        display: block; /* Muestra las secciones en vista de escritorio */
+      }
+
+      .button {
+        display: none; /* Oculta los botones en vista de escritorio */
+      }
+    }
+
+    /* Estilo para el footer */
+    
+  </style>
+  <script>
+    function toggleNavbar() {
+      const links = document.querySelector('.navbar-links');
+      links.classList.toggle('active');
+    }
+    function toggleSection(sectionId) {
+      var sections = document.querySelectorAll('.section');
+      sections.forEach(function(section) {
+        section.style.display = 'none'; // Ocultar todas las secciones
+      });
+      var selectedSection = document.getElementById(sectionId);
+      if (selectedSection.style.display === 'none' || selectedSection.style.display === '') {
+        selectedSection.style.display = 'block'; // Mostrar la sección seleccionada
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <div class="navbar">
+    <a href="index.html">
+      <img src="logo_ensac.png" alt="Logo ENSAC E.P.S" style="height: 50px;">
+    </a>
+    <button class="navbar-toggle" onclick="toggleNavbar()">Menú</button>
+    <div class="navbar-links">
+      <a href="index.html">Inicio</a>
+      <a href="#services">Servicios</a>
+      <a href="index.html#affiliation">Afiliación</a>
+      <a href="#contact">Contacto</a>
+      <a href="documentos.html">Documentos de Afiliación</a>
+      <a href="movilidad.html">Movilidad y Portabilidad</a>
+    </div>
+  </div>
+
+  <!-- Contenedor para Movilidad y Portabilidad -->
+  <div class="movilidad-portabilidad-container">
+    <button class="button" onclick="toggleSection('movilidad-section')">Movilidad</button>
+    <button class="button" onclick="toggleSection('portabilidad-section')">Portabilidad</button>
+
+    <div id="movilidad-section" class="section">
+      <h1>MOVILIDAD</h1>
+      <p>Es la posibilidad que un afiliado tiene de cambiar del régimen contributivo al régimen subsidiado y viceversa dentro de la misma E.P.S. junto con su núcleo familiar, sin perder la continuidad en los servicios de salud.</p>
+
+      <h3>CAMBIO DEL RÉGIMEN SUBSIDIADO AL CONTRIBUTIVO</h3>
+      <p>Si perteneces al régimen subsidiado y conseguiste un empleo o como independiente, al tener capacidad de pago debes cambiarte al régimen contributivo en salud porque comenzarás a dar tu aporte económico como empleado.</p>
+
+      <h3>PERSONAS QUE DEBEN SOLICITAR LA MOVILIDAD</h3>
+      <p>Todo afiliado que cumpla con los siguientes requisitos:</p>
+      <ul>
+        <li>Pertenecer a ENSAC, en Régimen Subsidiado.</li>
+        <li>Estar focalizado en los niveles I y II del Sisbén o pertenecer a algún tipo de población especial.</li>
+        <li>Los beneficiarios recién nacidos y menores de 18 años que se encuentren dentro del grupo familiar y a la fecha no estén sisbenizados (heredarán la condición del cotizante principal o cabeza de familia).</li>
+      </ul>
+
+      <h3>TRÁMITE A REALIZAR PARA SU MOVILIDAD AL RÉGIMEN CONTRIBUTIVO</h3>
+      <ol>
+        <li>Diligenciar el Formulario Único de Afiliaciones, marcando la novedad ‘Movilidad al Régimen Contributivo’.</li>
+        <li>Escanear y enviar el formulario debidamente diligenciado y firmado por el cotizante y el empleador, al correo <a href="mailto:afiliacionesnsac@ensaceps.com.co">afiliacionesnsac@ensaceps.com.co</a> o hacerlo llegar a la Oficina de Atención del Afiliado de ENSAC EPS más cercana.</li>
+        <li>Si los beneficiarios presentan actualización en sus documentos, se deben adjuntar.</li>
+      </ol>
+
+      <h3>CAMBIO DEL RÉGIMEN CONTRIBUTIVO AL SUBSIDIADO</h3>
+      <p>Cuando te encontrabas en el régimen contributivo y pierdes tu capacidad de pago, podrás pasar al régimen subsidiado nuevamente y no deberá cambiar de E.P.S., dando continuidad a los servicios de salud del afiliado cotizante y el de sus beneficiarios.</p>
+      <p><strong>Importante:</strong> cuando pasas del régimen contributivo al subsidiado, tu empleador debe reportar la novedad del retiro de forma inmediata por internet máximo un día después de la finalización del contrato laboral.</p>
+      <p>Si antes de perder el trabajo no estaba clasificado en el Sisbén, debe solicitar la encuesta al Sisbén.</p>
+    </div>
+
+    <div id="portabilidad-section" class="section">
+      <h2>PORTABILIDAD</h2>
+      <p><strong>ESTABLECIDO EN EL DECRETO 1683 DE 2013.</strong></p>
+      <p>Es la garantía de la accesibilidad a los servicios de salud, en cualquier municipio del territorio nacional, para todo afiliado al Sistema General de Seguridad Social en Salud que emigre del municipio domicilio de afiliación o de aquel donde habitualmente recibe los servicios de salud.</p>
+
+      <h3>Tipos de migración</h3>
+      <p>Según el tiempo de duración y el tipo de traslado, se han establecido tres tipos de migración:</p>
+      <ul>
+        <li><strong>Emigración ocasional:</strong> Es cuando un afiliado estará fuera de casa por un período no mayor a un (1) mes y solicita una urgencia, podrá acceder a los servicios de salud en cualquier hospital o clínica, aunque no tenga convenio con ENSAC.</li>
+        <li><strong>Emigración temporal:</strong> Si el afiliado se va a trasladar a otro municipio dentro del territorio nacional, por un tiempo superior a un (1) mes e inferior a doce meses (12), se garantizan los servicios de salud asignándote una IPS en el lugar donde te encontrarás.</li>
+        <li><strong>Emigración permanente:</strong> Si un afiliado o todo su núcleo familiar se va a vivir a otra ciudad por más de doce (12) meses o de manera definitiva, deberá realizar el cambio de EPS a una entidad habilitada que tenga el respectivo régimen dentro del municipio donde te encuentres.</li>
+      </ul>
+      <p><strong>Tener en cuenta:</strong> Si se acaba el tiempo de realizada tu portabilidad y todavía es emigración temporal podrás solicitar una prórroga por un año más.</p>
+
+      <h3>CANALES DISPONIBLES PARA REALIZAR EL TRÁMITE DE SU PORTABILIDAD</h3>
+      <ul>
+        <li>A través de la línea 018000925565.</li>
+        <li>Por la página web <a href="https://www.ensaceps.com.co" target="_blank">www.ensaceps.com.co</a>.</li>
+        <li>De manera presencial en el punto de atención al afiliado más cercano.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>ENSAC E.P.S © 2024 | Todos los derechos reservados | Contacto: <a href="mailto:info@ensaceps.com.co" style="color: white;">info@ensaceps.com.co</a></p>
+    <p>Teléfono: 018000925565 | Dirección: Calle 123 #45-67, Bogotá, Colombia</p>
+  </footer>
+
+</body>
+</html>
