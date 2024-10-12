@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REGIMEN- ENSAC E.P.S</title>
+  <link rel="stylesheet" href="template.css"> <!-- Importar CSS template -->
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <div class="navbar">
+    <a href="#home">
+      <img src="logo_ensac.png" alt="Logo ENSAC E.P.S">
+    </a>
+    <button class="navbar-toggle" onclick="toggleNavbar()">Menú</button>
+    <div class="navbar-links">
+      <a href="index.html">Inicio</a>
+      <a href="afiliacion.html">Afiliación</a>
+      <a href="regimen.html">Regimen</a>
+      <a href="documentos.html">Documentos de Afiliación</a>
+      <a href="movilidad.html">Movilidad y Portabilidad</a>
+    </div>
+  </div>
+
+  <!-- Acordeón de Régimen Contributivo y Subsidiado -->
+  <div class="accordion my-4" id="accordionRegimenes">
+    
+<!-- Sección Régimen Contributivo -->
+<div class="accordion-item">
+    <h2 class="accordion-header" id="headingContributivo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseContributivo" aria-expanded="false" aria-controls="collapseContributivo">
+        Régimen Contributivo - Cuotas Moderadoras y Copagos
+      </button>
+    </h2>
+    <div id="collapseContributivo" class="accordion-collapse collapse" aria-labelledby="headingContributivo" data-bs-parent="#accordionRegimenes">
+      <div class="accordion-body">
+        <h3>Cuotas Moderadoras</h3>
+        <p>Las cuotas moderadoras en el Régimen Contributivo son un valor que se paga por el servicio recibido para los afiliados y cotizantes, de acuerdo a la categoría que pertenece el afiliado y provienen de su salario mensual.</p>
+  
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Categoría</th>
+              <th>Rango de IBC en SMLMV (1)</th>
+              <th>Valor cuota moderadora 2023</th>
+              <th>Incremento UVT para el año 2024 (2)</th>
+              <th>Valor cuota moderadora 2024</th>
+              <th>Incremento 2024-2023</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>A</td>
+              <td>Menor a 2 SMLMV</td>
+              <td>$ 4.100</td>
+              <td>10,97 %</td>
+              <td>$ 4.500</td>
+              <td>9,76 %</td>
+            </tr>
+            <tr>
+              <td>B</td>
+              <td>Entre 2 y 5 SMLMV</td>
+              <td>$ 4.100</td>
+              <td>10,97 %</td>
+              <td>$ 18.200</td>
+              <td>10,98 %</td>
+            </tr>
+            <tr>
+              <td>C</td>
+              <td>Mayor a 5 SMLMV</td>
+              <td>$ 43.000</td>
+              <td>10,97 %</td>
+              <td>$ 47.700</td>
+              <td>10,93 %</td>
+            </tr>
+          </tbody>
+        </table>
+  
+        <p><strong>Valor de la cuota moderadora 2024:</strong></p>
+        <ul>
+          <li>(1) Salario Mínimo Mensual Legal Vigente.</li>
+          <li>(2) Unidad de Valor Tributario.</li>
+        </ul>
+  
+        <h3>Casos en los que se debe pagar cuotas moderadoras:</h3>
+        <ul>
+          <li>Consulta externa de medicina general.</li>
+          <li>Consultas paramédicas: nutrición, psicología, optometría, entre otras.</li>
+          <li>Consulta externa con especialistas.</li>
+          <li>Consulta odontológica.</li>
+          <li>Medicamentos recetados en consulta ambulatoria.</li>
+          <li>Exámenes de laboratorio clínico ambulatorios.</li>
+          <li>Radiología e imagenología.</li>
+          <li>Urgencias no vitales.</li>
+        </ul>
+  
+        <h3>Excepciones de pagos de cuotas moderadoras:</h3>
+        <ul>
+          <li>Programas de promoción, educación y prevención según actividades definidas en la Resolución 412 de 2000, del Ministerio de Salud.</li>
+          <li>Servicios Alto Costo (Resolución 5269 de 2016).</li>
+          <li>Población especial según Circular 016 de 2014 del Ministerio de Salud y Protección Social.</li>
+        </ul>
+  
+        <h3>Copagos</h3>
+        <p>Son un valor que se paga por los afiliados en cada servicio de asistencia.</p>
+  
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Categoría</th>
+              <th>Rango de IBC en SMLMV (1)</th>
+              <th>% del valor del servicio</th>
+              <th>Tope por Evento (2)</th>
+              <th>Valor máximo por año (3)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>A</td>
+              <td>Menor a 2 SMLMV</td>
+              <td>11,50 %</td>
+              <td>$ 337.999</td>
+              <td>$ 677.175</td>
+            </tr>
+            <tr>
+              <td>B</td>
+              <td>Entre 2 y 5 SMLMV</td>
+              <td>17,30 %</td>
+              <td>$ 1.354.351</td>
+              <td>$ 2.708.700</td>
+            </tr>
+            <tr>
+              <td>C</td>
+              <td>Mayor a 5 SMLMV</td>
+              <td>23 %</td>
+              <td>$ 2.708.700</td>
+              <td>$ 5.417.400</td>
+            </tr>
+          </tbody>
+        </table>
+  
+        <p><strong>Valor de los copagos 2024:</strong></p>
+        <ul>
+          <li>(1) Salario Mínimo Mensual Legal Vigente.</li>
+          <li>(2) Es el valor pagado por un solo servicio recibido.</li>
+          <li>(3) Es el valor que se paga en todo un año y no sobrepasará los valores máximos.</li>
+        </ul>
+  
+        <h3>Excepciones de Copagos:</h3>
+        <ol>
+          <li>Servicios de promoción y prevención.</li>
+          <li>Programas de control en atención materno infantil.</li>
+          <li>Programas de control en atención de las enfermedades transmisibles.</li>
+          <li>Enfermedades catastróficas o de alto costo (Resolución 5269 de 2017 del Ministerio de Salud y Protección Social).</li>
+          <li>Atención inicial de urgencias.</li>
+          <li>Servicios objeto de pago de cuota moderadora.</li>
+          <li>Población especial según Circular 016 de 2014 del Ministerio de Salud y Protección Social.</li>
+          <li>Menores con cáncer (Ley 1388 de 2010).</li>
+          <li>Niños, niñas y adolescentes con discapacidades físicas, sensoriales y cognitivas, enfermedades catastróficas y ruinosas que sean certificadas por el médico tratante, serán gratuitos para los niños, niñas y adolescentes de SISBÉN 1 y 2 (Ley 1438 de 2011, Art. 18).</li>
+          <li>Restablecimiento de la salud de las mujeres víctimas de la violencia (Ley 1438 de 2011, Art. 54).</li>
+          <li>Víctimas de conflicto armado (Ley 1448 de 2011).</li>
+          <li>Víctimas de ataques con agentes químicos (Resolución 4568 de 2014).</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  
+
+    <!-- Sección Régimen Subsidiado -->
+<div class="accordion-item">
+    <h2 class="accordion-header" id="headingSubsidiado">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSubsidiado" aria-expanded="false" aria-controls="collapseSubsidiado">
+        Régimen Subsidiado
+      </button>
+    </h2>
+    <div id="collapseSubsidiado" class="accordion-collapse collapse" aria-labelledby="headingSubsidiado" data-bs-parent="#accordionRegimenes">
+      <div class="accordion-body">
+        <h3>Cuotas Moderadoras</h3>
+        <p>Los afiliados al Régimen Subsidiado en el Sistema General de Seguridad Social en Salud no deben pagar cuotas moderadoras.</p>
+  
+        <h3>Valor de Copagos</h3>
+        <p><strong>Régimen subsidiado:</strong> Porcentaje del valor del servicio: <strong>10%</strong></p>
+  
+        <h4>Tope máximo por evento y por año (2023-2024)</h4>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Tope</th>
+              <th>Tope 2023</th>
+              <th>Tope 2024</th>
+              <th>Actualización 2023-2024</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Valor máximo por evento</td>
+              <td>530.632,42</td>
+              <td>588.847,85</td>
+              <td>10,97 %</td>
+            </tr>
+            <tr>
+              <td>Valor máximo por año</td>
+              <td>1.061.264,84</td>
+              <td>1.177.695,69</td>
+              <td>10,97 %</td>
+            </tr>
+          </tbody>
+        </table>
+  
+        <h4>Afiliados que no deben pagar Copagos</h4>
+        <ol>
+          <li>Niños durante el primer año de vida. (Art. 12 del Acuerdo 260 de 2004)</li>
+          <li>Población con clasificación 1 en la Encuesta SISBEN (Cualquier edad). (Art. 14 literal g. de la Ley 1122 de 2007)</li>
+          <li>Poblaciones especiales que se identifiquen mediante instrumentos diferentes al SISBEN, tales como listados censales u otros, siempre y cuando presenten condiciones de pobreza similares a las del nivel 1 del SISBEN tales como (Art. 1 del acuerdo 365 de 2007):
+            <ul>
+              <li>Población infantil abandonada mayor de un año.</li>
+              <li>Población Habitante de calle.</li>
+              <li>Población en condiciones de desplazamiento forzado.</li>
+              <li>Población indígena.</li>
+              <li>Población desmovilizada (El núcleo familiar de la población desmovilizada una vez identificado mediante la encuesta SISBEN, siempre y cuando se identifiquen en el nivel 1 del SISBEN).</li>
+              <li>Personas de la tercera edad en protección de ancianatos e instituciones de asistencia social.</li>
+              <li>Población rural migratoria.</li>
+              <li>Población ROM.</li>
+            </ul>
+          </li>
+          <li>Población especial según Circular 016 de 2014 del Ministerio de Salud y Protección Social.</li>
+          <li>Población especial de Bogotá D.C según el Artículo 1° del Decreto 345 de 2008.</li>
+        </ol>
+  
+        <h4>Servicios Exentos de Copagos</h4>
+        <p>Teniendo en cuenta lo establecido en el Artículo 7 del Acuerdo 260 de 2004 y la Resolución 412 de 2000, igualmente la atención será gratuita (exenta de copagos) cuando un usuario, independientemente de su edad y condición socioeconómica, reciba los siguientes servicios:</p>
+        <ol>
+          <li>Control prenatal, atención del parto y sus complicaciones.</li>
+          <li>Servicios de promoción y prevención.</li>
+          <li>Programas de control en atención materno infantil.</li>
+          <li>Programas de control en atención de las enfermedades trasmisibles.</li>
+          <li>Enfermedades catastróficas o de alto costo (Resolución 5269 de 2017 del Ministerio de Salud y Protección Social).</li>
+          <li>La atención inicial de urgencias y consulta de urgencias.</li>
+          <li>Consulta médica, odontológica y consulta por otras disciplinas no médicas, exámenes de laboratorio, imagenología, despacho de medicamentos cubiertos en el PBS del régimen subsidiado.</li>
+          <li>Prescripciones regulares dentro de un programa especial de atención integral para patologías específicas.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  
+
+  <footer>
+    <p>ENSAC E.P.S © 2024 | Todos los derechos reservados | Contacto: <a href="mailto:ensacepstusaludesnuestramision@gmail.com" style="color: white;">ensacepstusaludesnuestramision@gmail.com</a></p>
+    <p>Teléfono: 314 6187759 | Whatsapp: 312 2969006 | Dirección: Calle 123 #45-67, Bogotá, Colombia</p>
+    <p>Facebook: <a href="https://www.facebook.com/ENSAC" target="_blank" style="color: white;">ENSAC</a> | Instagram: <a href="https://www.instagram.com/ENSACEPS" target="_blank" style="color: white;">ENSACEPS</a></p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleNavbar() {
+      const links = document.querySelector('.navbar-links');
+      links.classList.toggle('active');
+    }
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
