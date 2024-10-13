@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPC - ENSAC E.P.S</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser/dist/email.min.js"></script>
+    <link rel="stylesheet" href="css/template.css">
+    <style>
+    .upc-section {
+        padding: 50px 20px;
+        background-color: #f7f7f7;
+        font-family: Arial, sans-serif;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
+    h2 {
+        text-align: center;
+        color: #0056b3;
+        margin-bottom: 20px;
+        font-size: 2em;
+    }
+    
+    h3 {
+        margin-top: 30px;
+        font-size: 1.5em;
+    }
+    
+    p {
+        font-size: 1.1em;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+    
+    ul, ol {
+        margin-left: 20px;
+        
+        font-size: 1.1em;
+    }
+    
+    ul li, ol li {
+        margin-bottom: 10px;
+    }
+    
+    ul li::before {
+        content: '•';
+        color: #0056b3;
+        font-weight: bold;
+        display: inline-block; 
+        width: 1em;
+        margin-left: -1em;
+    }
+    
+    ol li {
+        margin-bottom: 15px;
+    }
+    
+    ol li strong {
+        color: #0056b3;
+    }
+    
+    @media (max-width: 768px) {
+        .upc-section {
+            padding: 30px 10px;
+        }
+    
+        h2 {
+            font-size: 1.6em;
+        }
+    
+        h3 {
+            font-size: 1.3em;
+        }
+    
+        p, ul, ol {
+            font-size: 1em;
+        }
+    }
+</style>
+    
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">
+            <img src="img/logo_ensac.png" alt="Logo ENSAC E.P.S">
+        </a>
+        <button class="navbar-toggle" onclick="toggleNavbar()">Menú</button>
+        <div class="navbar-links">
+            <a href="index.html">Inicio</a>
+            <a href="afiliacion.html">Afiliación</a>
+            <a href="upc.html">UPC</a>
+            <a href="regimen.html">Regimen</a>
+            <a href="documentos.html">Documentos de Afiliación</a>
+            <a href="movilidad.html">Movilidad y Portabilidad</a>
+        </div>
+      </div>
+      
+    <section id="upc-adicional" class="upc-section">
+        <div class="container">
+            <h2>UPC Afiliación Adicional</h2>
+            <p>En Colombia, la UPC adicional (Unidad de Pago por Capitación adicional) es un mecanismo que permite a las Entidades Promotoras de Salud (EPS) recibir una cantidad adicional de recursos para la atención de sus afiliados con condiciones de salud especiales o enfermedades de alto costo.</p>
+            
+            <h3>¿Qué es la UPC?</h3>
+            <p>La UPC es el valor que el Estado colombiano paga a las EPS por cada afiliado al sistema de salud, para cubrir los servicios del Plan Obligatorio de Salud (POS). La UPC adicional se otorga cuando un afiliado presenta condiciones especiales de salud que demandan mayor costo de atención.</p>
+            
+            <h3>¿Quiénes son los beneficiarios de la UPC adicional?</h3>
+            <ul>
+                <li>Cáncer</li>
+                <li>Insuficiencia renal crónica</li>
+                <li>VIH/SIDA</li>
+                <li>Hemofilia</li>
+                <li>Enfermedades huérfanas o raras</li>
+                <li>Trasplantes</li>
+            </ul>
+    
+            <h3>Requisitos para recibir la UPC adicional</h3>
+            <ul>
+                <li>Estar afiliada al régimen contributivo o subsidiado</li>
+                <li>Tener un diagnóstico confirmado de alguna de las condiciones de alto costo</li>
+                <li>La EPS es la encargada de realizar la solicitud ante ADRES para el reconocimiento del valor adicional</li>
+            </ul>
+    
+            <h3>Proceso de solicitud de la UPC adicional</h3>
+            <ol>
+                <li><strong>Diagnóstico médico:</strong> El afiliado debe recibir el diagnóstico de una enfermedad de alto costo.</li>
+                <li><strong>EPS:</strong> La EPS gestiona la actualización del estado de salud ante ADRES.</li>
+                <li><strong>Verificación:</strong> ADRES verifica la solicitud y asigna la UPC adicional si se cumplen los requisitos.</li>
+            </ol>
+    
+            <h3>Responsabilidades de la EPS</h3>
+            <p>La EPS debe garantizar los servicios y tratamientos necesarios para los afiliados con UPC adicional, además de actualizar la información periódicamente.</p>
+    
+            <h3>Servicios cubiertos</h3>
+            <p>La UPC adicional cubre tratamientos, medicamentos, hospitalización, procedimientos especializados, y otros servicios necesarios para el manejo de las enfermedades de alto costo.</p>
+    
+            <h3>Seguimiento</h3>
+            <p>Es importante que el afiliado mantenga un seguimiento constante con su EPS para garantizar la atención adecuada y asegurarse de que su condición siga siendo reportada correctamente.</p>
+        </div>
+    </section>
+    <footer>
+        <p>ENSAC E.P.S © 2024 | Todos los derechos reservados | Contacto: <a href="mailto:ensacepstusaludesnuestramision@gmail.com" style="color: white;">ensacepstusaludesnuestramision@gmail.com</a></p>
+        <p>Teléfono: 314 6187759 | Whatsapp: 312 2969006 | Dirección: Calle 123 #45-67, Bogotá, Colombia</p>
+        <p>Facebook: <a href="https://www.facebook.com/ENSAC" target="_blank" style="color: white;">ENSAC</a> | Instagram: <a href="https://www.instagram.com/ENSACEPS" target="_blank" style="color: white;">ENSACEPS</a></p>
+      </footer>
+</body>
+</html>
