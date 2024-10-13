@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Afiliación a ENSAC E.P.S</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser/dist/email.min.js"></script>
+    
+</head>
+<body>
+    <h1>Formulario de Afiliación a ENSAC E.P.S</h1>
+    <form id="afiliacionForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required><br>
+
+        <label for="documento">Número de Documento:</label>
+        <input type="text" name="documento" id="documento" required><br>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" name="email" id="email" required><br>
+
+        <label for="regimen">Régimen:</label>
+        <select name="regimen" id="regimen" required>
+            <option value="Contributivo">Contributivo</option>
+            <option value="Subsidiado">Subsidiado</option>
+        </select><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        (function(){
+            emailjs.init("G4Wblkz5pvb6_BSOW"); // Reemplaza con tu Public Key de EmailJS
+        })();
+
+        document.getElementById('afiliacionForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el envío predeterminado
+
+            // Obtiene los valores del formulario
+            const nombre = document.getElementById('nombre').value;
+            const documento = document.getElementById('documento').value;
+            const email = document.getElementById('email').value;
+            const regimen = document.getElementById('regimen').value;
+
+            // Envía el correo usando EmailJS
+            emailjs.send('service_xxpqvxi', 'template_a6edwht', {
+                nombre: nombre,
+                documento: documento,
+                email: email,
+                regimen: regimen,
+            }).then(function() {
+                alert('Tu solicitud ha sido enviada. Gracias.');
+            }, function(error) {
+                alert('Error al enviar: ' + JSON.stringify(error));
+            });
+        });
+    </script>
+</body>
+</html>
