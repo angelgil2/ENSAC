@@ -64,6 +64,11 @@
         </div>
 
         <div class="form-group">
+          <label for="telefono">Numero telefonico:</label>
+          <input type="text" class="form-control" id="numero" name="numero" required>
+      </div>
+
+        <div class="form-group">
             <label for="regimen">Tipo de Régimen:</label>
             <select class="form-control" id="regimen" name="regimen" required>
                 <option value="">Seleccione</option>
@@ -87,6 +92,7 @@
       const nombre = document.getElementById('nombre').value;
       const documento = document.getElementById('documento').value;
       const email = document.getElementById('email').value;
+      const numero = document.getElementById('numero').value;
       const regimen = document.getElementById('regimen').value;
 
       // Envía el correo usando EmailJS
@@ -94,6 +100,7 @@
           nombre: nombre,
           documento: documento,
           email: email,
+          numero: numero,
           regimen: regimen,
       }).then(function() {
           alert('Tu solicitud ha sido enviada. Gracias.');
